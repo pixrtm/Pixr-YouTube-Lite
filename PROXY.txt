@@ -1,0 +1,7 @@
+Proxy HTTP/SOCKS optionnel
+==========================
+
+Dans config.php :
+  'http_proxy' => 'http://USER:PASS@HOST:PORT',
+
+Utilisé par les requêtes sortantes si renseigné.

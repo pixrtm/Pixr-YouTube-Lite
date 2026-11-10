@@ -1,0 +1,19 @@
+Google OAuth consent screen — align with homepage
+=================================================
+
+App name (exact):  Pixr Lite
+Homepage:          https://pixr.dev/ytlite/
+Privacy:           https://pixr.dev/privacy/
+Logo file to upload in Google Cloud Console:
+  ytlite/assets/pixr-lite-icon-512.png
+  (square teal Pixr “P” mark — not a YouTube play button)
+
+In Google Cloud Console → APIs & Services → OAuth consent screen:
+  1. Application name = Pixr Lite  (must match the masthead text)
+  2. Application logo = pixr-lite-icon-512.png
+  3. Application home page = https://pixr.dev/ytlite/
+  4. Privacy policy = https://pixr.dev/privacy/
+  5. Authorized domains include pixr.dev
+  6. Save, then resubmit verification
+
+Do NOT use “YouTube” in the app name — Google rejects brand impersonation.

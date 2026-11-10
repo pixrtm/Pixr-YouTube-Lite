@@ -1,0 +1,39 @@
+# Local secrets / runtime
+config.php
+data/youtube.cookies.txt
+data/youtube.cookies.txt.*
+data/cookie_health.json
+data/deploy_marker.txt
+data/oauth/*
+!data/oauth/.htaccess
+data/videos/*
+!data/videos/.gitkeep
+data/ytdlp_oauth/cookies.txt
+data/ytdlp_oauth/status.json
+data/_server_pull/
+data/_chrome_copy/
+
+# Large / platform binaries (download separately)
+bin/yt-dlp-linux
+bin/deno
+bin/deno.gz
+bin/cpython.tar.gz
+bin/python/
+bin/yt-dlp-2026.pyz
+bin/yt-dlp.pyz
+bin/ffmpeg*
+bin/ffprobe*
+
+# OS / editor / junk
+.DS_Store
+*.swp
+*.tmp
+.idea/
+.vscode/
+__pycache__/
+*.pyc
+_trash_favicons/
+
+# Local sync logs / LaunchAgent copies with secrets
+/tmp/ytlite-cookie-sync.*
+scripts/com.pixr.ytlite.cookie-sync.plist

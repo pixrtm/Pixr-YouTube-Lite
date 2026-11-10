@@ -1,0 +1,30 @@
+Déploiement YouTube Lite
+========================
+
+Lecture : converter.py + Python + bin/yt-dlp-2026.pyz
+
+Fichiers critiques :
+  bin/yt-dlp-2026.pyz
+  bin/cpython.tar.gz
+  bin/deno.gz
+  bin/ffmpeg.gz
+  scripts/converter.py
+  lib/convert.php
+  convert_run.php
+  watch.php
+  url/index.php
+  cookies.php
+  cookie_cron.php
+  lib/cookie_auth.php
+  config.php
+  data/youtube.cookies.txt
+  data/cookie_health.json (écrit par le serveur)
+  data/videos/ (écriture PHP)
+
+Cookie partagé : scripts/sync_firefox_yt_cookies.py (arrière-plan) → cookie_sync.php
+  ou cookies.php (admin). Pas d’UI Account pour les visiteurs.
+Cron santé : curl -fsS "https://pixr.dev/ytlite/cookie_cron.php?key=SETUP_KEY"
+
+NE PAS uploader bin/python/ (extrait auto depuis cpython.tar.gz).
+
+Vérifier test.php (Me at the zoo) après déploiement.

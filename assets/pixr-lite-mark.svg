@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Pixr Lite">
+  <rect width="64" height="64" rx="14" fill="#0A7862"/>
+  <g fill="#FFFFFF" transform="translate(8 8) scale(0.75)">
+    <path d="M10 10h12v44H10z"/>
+    <path d="M27 10h15l10 10v10L42 40H27V28h13v-6H27z"/>
+  </g>
+</svg>
